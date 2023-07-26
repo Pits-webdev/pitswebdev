@@ -1,5 +1,5 @@
 <header>
 	<nav>
-		<a href="/">Home</a>
+		<p>Home</p>
 	</nav>
 </header>
