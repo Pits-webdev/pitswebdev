@@ -7,7 +7,7 @@
 <header class="header">
 	<nav class="navbar">
 		<div class="logo">
-			<a href="/"><img src={logo} alt="logo ps" /></a>
+			<a href="/pitswebdev"><img src={logo} alt="logo ps" /></a>
 		</div>
 
 		<ul class="menu">
