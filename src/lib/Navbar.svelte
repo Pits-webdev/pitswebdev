@@ -9,9 +9,8 @@
 		<div class="logo">
 			<a href="/pitswebdev"><img src={logo} alt="logo ps" /></a>
 		</div>
-		<!-- 
-		
-		<ul class="menu">
+
+		<!-- <ul class="menu">
 			<li><a href="/">Home</a></li>
 			<li><a href="/about">About</a></li>
 			<li><a href="/work">Work</a></li>

@@ -1,5 +1,6 @@
 <script>
-	import arrow from '$lib/images/arrow.png';
+	import { Canvas } from '@threlte/core';
+	import Scene from '$lib/Scene.svelte';
 </script>
 
 <div class="head container_xl">
@@ -66,6 +67,13 @@
 
 		<div class="row">image</div>
 	</div>
+</div>
+
+<!-- threlte -->
+<div class="threlte">
+	<Canvas>
+		<Scene />
+	</Canvas>
 </div>
 
 <style>
@@ -140,5 +148,10 @@
 		border: 2px solid var(--gray);
 		padding: 3.6rem;
 		border-radius: 3.2rem;
+	}
+
+	.threlte {
+		width: 100%;
+		height: 100vh;
 	}
 </style>
