@@ -1,10 +1,10 @@
 :root {
 	/* Color */
 
-	--dark: #222;
+	--dark: #000000;
 	--light: #fdfdfd;
 	--gray: #d2d2d2;
-	--yellow: #daf982;
+	--green: #04410e;
 
 	--header_height: 9rem;
 
@@ -38,7 +38,7 @@ html {
 }
 
 body {
-	font-size: 1.8rem;
+	font-size: 1.2rem;
 	color: var(--light);
 	background-color: var(--dark);
 	font-family: var(--poppins);
@@ -62,21 +62,16 @@ h1,
 h2,
 h3,
 h4 {
-	font-family: var(--anton);
 	line-height: 1.1;
 }
 
-h1 {
-	font-size: max(10.6vw, 2.4rem);
-	letter-spacing: 3px;
-}
-
-h1 span {
-	color: var(--yellow);
+h2 {
+	font-size: max(1vw, 1.2rem);
+	letter-spacing: 1px;
 }
 
 .container_xl {
-	width: 90%;
+	width: 96%;
 	height: max-content;
 	margin: 0 auto;
 }

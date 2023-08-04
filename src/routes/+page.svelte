@@ -4,154 +4,189 @@
 </script>
 
 <div class="head container_xl">
-	<div class="head_top">
-		<div class="grid">
-			<div class="square">
-				<span class="icon"
-					><svg
-						width="128px"
-						height="128px"
-						viewBox="0 0 128 128"
-						version="1.1"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M64 0C64 35.3462 35.3462 64 0 64C35.3462 64 64 92.6538 64 128C64 92.6538 92.6538 64 128 64C92.6538 64 64 35.3462 64 0Z"
-							id="icon_1"
-							fill="#020202"
-							fill-rule="evenodd"
-							stroke="none"
-						/>
-					</svg></span
-				>
-				<span class="icon">
-					<svg
-						width="181.21149px"
-						height="119.125946px"
-						viewBox="0 0 181.21149 119.125946"
-						version="1.1"
-						xmlns:xlink="http://www.w3.org/1999/xlink"
-						xmlns="http://www.w3.org/2000/svg"
-					>
-						<path
-							d="M133.468 69.5986L0 69.5986L0 49.6317L133.575 49.6317C120.535 37.1127 112.418 19.5043 112.418 7.62939e-06L131.585 0C131.585 27.4082 153.803 49.6269 181.211 49.6269L181.211 49.6317L181.211 69.5986L178.083 69.5986C152.132 71.2107 131.583 92.7686 131.583 119.126L112.418 119.126C112.418 119.102 112.418 119.078 112.418 119.053C112.438 99.6318 120.507 82.0949 133.468 69.5986Z"
-							id="arrow"
-							fill="#DAF982"
-							fill-rule="evenodd"
-							stroke="none"
-						/>
-					</svg>
-				</span>
-			</div>
-			<div class="hl_top">
-				<h1>FUTURE <span>DIGITAL</span></h1>
-			</div>
-
-			<div class="hl_bottom">
-				<h1><span>UNIQUE</span> WEBDESIGN</h1>
-			</div>
-		</div>
-	</div>
-
-	<div class="head_bottom">
-		<div class="row">
+	<div class="head_container">
+		<div class="box_left">
 			<div class="content">
-				<p>Hello I'm Peter from germany,</p>
-				<p>
-					I'm helping startups and business owners to make a visual statement through spotless Web
-					Design and Development so they can increase brand awareness and sell more.
-				</p>
+				<h2>Developer</h2>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+			</div>
+			<div class="content">
+				<h2>Skills</h2>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+			</div>
+		</div>
+		<!-- center -->
+		<div class="box_center">
+			<!-- line -->
+			<div class="line_container">
+				<div class="box box_1">
+					<span class="line line_H" />
+					<span class="line line_V" />
+				</div>
+				<div class="box box_2">
+					<span class="line line_H" />
+					<span class="line line_V" />
+				</div>
+
+				<div class="box box_3">
+					<span class="line line_H" />
+					<span class="line line_V" />
+				</div>
+
+				<div class="box box_4">
+					<span class="line line_H" />
+					<span class="line line_V" />
+				</div>
+			</div>
+
+			<!-- threlte -->
+			<div class="threlte">
+				<Canvas>
+					<Scene />
+				</Canvas>
 			</div>
 		</div>
 
-		<div class="row">image</div>
+		<div class="box_right">
+			<div class="content">
+				<h2>Designer</h2>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+			</div>
+			<div class="content">
+				<h2>Seo</h2>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+				<p>Lorem, ipsum dolor.</p>
+			</div>
+		</div>
 	</div>
-</div>
-
-<!-- threlte -->
-<div class="threlte">
-	<Canvas>
-		<Scene />
-	</Canvas>
 </div>
 
 <style>
 	.head {
+		height: calc(100vh - var(--header_height));
+		display: flex;
+		align-items: center;
+	}
+	.head_container {
+		width: 100%;
+		height: calc(70vh - var(--header_height));
+		display: grid;
+		grid-template-columns: 15% auto 15%;
+		gap: 6.2rem;
+	}
+
+	.box_left,
+	.box_right {
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		margin-top: 3.2rem;
-	}
-	.head_top {
-		width: 100%;
-		height: 100%;
-		display: flex;
-		gap: 3.2rem;
-	}
-
-	.square {
-		width: 22vw;
-		height: 8.5vw;
-		background-color: var(--gray);
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		gap: 3.2vw;
-		border-radius: 10rem;
-	}
-
-	.square .icon {
-		display: flex;
-		align-items: center;
-	}
-
-	.square .icon svg {
-		display: inline-block;
-		width: 7.2vw;
-		height: auto;
-	}
-
-	.grid {
-		display: grid;
-		grid-template-columns: repeat(7, minmax(0, 1fr));
-		grid-template-rows: repeat(2, minmax(0, 1fr));
-		align-items: center;
-	}
-
-	.square {
-		grid-column: 1 / 3;
-	}
-
-	.hl_top {
-		grid-column: 3 / -1;
-	}
-
-	.hl_bottom {
-		grid-column: 1 / -1;
-	}
-
-	.head_bottom {
-		display: flex;
 		justify-content: space-between;
-		gap: 26rem;
-		margin-top: 6.4rem;
-	}
-
-	.head_bottom .row {
-		flex-basis: 50%;
-	}
-
-	.row .content {
+		gap: 3.2rem;
 		width: 100%;
 		height: 100%;
-		border: 2px solid var(--gray);
-		padding: 3.6rem;
-		border-radius: 3.2rem;
 	}
+
+	.box_left {
+		align-items: flex-start;
+	}
+	.box_right {
+		align-items: flex-end;
+	}
+
+	.box_center {
+		width: 100%;
+		height: 100%;
+		position: relative;
+	}
+
+	/* lines geen start */
+	.line_container {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+	.box {
+		width: 7rem;
+		height: 7rem;
+	}
+
+	.box_1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.box_2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+	.box_3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.box_4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+
+	.line {
+		background-color: var(--green);
+		display: inline-block;
+	}
+
+	.line_H {
+		width: 100%;
+		height: 0.1rem;
+	}
+	.line_V {
+		height: 100%;
+		width: 0.1rem;
+	}
+
+	.box_1 .line_H,
+	.box_1 .line_V {
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+
+	.box_2 .line_H,
+	.box_2 .line_V {
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+
+	.box_3 .line_H,
+	.box_3 .line_V {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+	}
+	.box_4 .line_H,
+	.box_4 .line_V {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+	}
+	/* lines green end */
 
 	.threlte {
 		width: 100%;
-		height: 100vh;
+		height: 100%;
 	}
 </style>

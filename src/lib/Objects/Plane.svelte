@@ -19,7 +19,7 @@
 
 {#if $texture1}
 	<T.Mesh
-		geometry={new Three.PlaneGeometry(8, 5, 20, 20)}
+		geometry={new Three.PlaneGeometry(12, 7, 20, 20)}
 		material={new Three.ShaderMaterial({
 			uniforms: {
 				time: { type: 'f', value: time },
